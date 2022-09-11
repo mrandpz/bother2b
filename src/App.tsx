@@ -9,7 +9,7 @@ function App() {
   const bears = useBearStore((state) => state.bears);
   const { bears: another } = useBearStore((state) => ({ bears: state.bears }), shallow);
 
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return <h1 className="text-3xl font-bold underline">Hello world!{bears}</h1>;
 }
 
 export default App;
